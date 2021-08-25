@@ -1,0 +1,90 @@
+@import './Variables.scss';
+
+.Container {
+  > div {
+    padding: 26px 40px;
+    border-radius: 10px;
+    div:first-child {
+      display: flex;
+      align-items: center;
+      img {
+        border-radius: 50%;
+        margin-right: 15px;
+        border: #b28be8 solid 2px;
+        width: 30px;
+        height: 30px;
+      }
+      .spanBox {
+        span {
+          display: block;
+        }
+        span:first-child {
+          font-size: 1rem;
+          color: white;
+        }
+        span:last-child {
+          font-size: 0.8rem;
+          color: $font-light;
+        }
+      }
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin: 20px 0;
+      color: white;
+    }
+    p {
+      color: hsla(0, 0%, 100%, 0.75);
+      font-size: 1rem;
+      line-height: 18px;
+      font-weight: 500;
+    }
+  }
+  .daniel {
+    grid-area: daniel;
+    background-color: $moderate-violet;
+    background-image: url('../images/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+  }
+  .jonathan {
+    grid-area: jonathan;
+    background-color: $grayish-blue;
+  }
+  .jeanette {
+    grid-area: jeanette;
+    background-color: white;
+    p,
+    h2 {
+      color: $blackish-blue;
+    }
+    div:first-child {
+      .spanBox {
+        span:first-child,
+        span:last-child {
+          color: $blackish-blue;
+        }
+      }
+    }
+  }
+  .patrick {
+    grid-area: patrick;
+    background-color: $blackish-blue;
+  }
+  .kira {
+    grid-area: kira;
+    background-color: white;
+    p,
+    h2 {
+      color: $blackish-blue;
+    }
+    div:first-child {
+      .spanBox {
+        span:first-child,
+        span:last-child {
+          color: $blackish-blue;
+        }
+      }
+    }
+  }
+}
